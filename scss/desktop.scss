@@ -1,0 +1,153 @@
+.deliveryBlock {
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+  .caption {
+    width: 100%;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .leftSide {
+    max-width: 526px;
+    width: 50%;
+  }
+  .rightSide {
+    max-width: 925px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50px;
+    margin-left: -183px;
+  }
+  .logoDelivery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 47px -19px 0;
+    li {
+      margin: 0 19px 19px;
+    }
+    img {
+    }
+  }
+  .map {
+    position: relative;
+    img {
+    }
+    .text {
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 33px;
+      color: #000;
+      bottom: 141px;
+      right: 179px;
+      position: absolute;
+    }
+  }
+  .payment {
+    display: flex;
+    align-items: center;
+    @include border-radius(10px);
+    background-color: #ffb400;
+    color: #fff;
+    padding: 31px 50px;
+    margin-top: 65px;
+    .title {
+      width: 35%;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+    }
+    .text {
+      width: 75%;
+      position: relative;
+      padding-left: 75px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        width: 3px;
+        height: 52px;
+        margin-top: -26.5px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.deliveryList {
+  margin-top: 26px;
+  .deliveryitem {
+    & + .deliveryitem {
+      margin-top: 30px;
+    }
+    &:first-child {
+      .drop {
+        display: block;
+      }
+    }
+  }
+  .name {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 11px;
+      height: 11px;
+      @include border-radius(50%);
+      background-color: #ffb400;
+      margin-top: -5.5px;
+      @include transition(all 0.3s);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -48px;
+      top: 50%;
+      background-image: url("../img/arrow_delivery.svg");
+      font-size: 20px;
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include border-radius(50%);
+      background-color: #ffb400;
+      margin-top: -12px;
+      @include transition(all 0.3s);
+    }
+    &.open {
+      &::after {
+        background-color: #808080;
+        @include transform(rotate(180deg));
+      }
+    }
+  }
+  .drop {
+    margin-top: 12px;
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,138 @@
+@media (max-width: 1700px) {
+  .deliveryBlock {
+    .rightSide {
+      margin-left: -100px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .deliveryBlock {
+    .rightSide {
+      margin-left: -44px;
+    }
+    .map {
+      .text {
+        font-size: 20px;
+        line-height: 28px;
+        bottom: 151px;
+        right: 390px;
+      }
+    }
+    .payment {
+      .text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .deliveryBlock {
+    .rightSide {
+      margin-left: 5px;
+    }
+    .map {
+      .text {
+        right: auto;
+        left: 0;
+        bottom: 0;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1365px) {
+  .deliveryBlock {
+    .rightSide {
+      margin-left: 16px;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .deliveryBlock {
+    .leftSide {
+      width: 100%;
+      max-width: 100%;
+    }
+    .rightSide {
+      position: relative;
+      right: auto;
+      top: auto;
+      margin: 0;
+      left: 0;
+    }
+    .map {
+      .text {
+        left: auto;
+        bottom: 100px;
+        right: 129px;
+      }
+    }
+    .payment {
+      flex-wrap: wrap;
+      padding: 30px;
+      .title {
+        width: 100%;
+        font-size: 26px;
+        line-height: 30px;
+      }
+      .text {
+        width: 100%;
+        border-top: solid 3px #fff;
+        max-width: 100%;
+        padding: 15px 0 0;
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 20px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .deliveryBlock {
+    .caption {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .map {
+      .text {
+        left: auto;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
+    }
+    .payment {
+      .title {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .deliveryBlock {
+    .payment {
+      padding: 30px 15px;
+    }
+  }
+}
